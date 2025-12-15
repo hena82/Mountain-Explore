@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Mountain Explore</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html"><i class="fas fa-mountain logo-footer"></i><span class="brand-title">Mountain Explore</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="trips.html" class="nav-link">Trips</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="contact.html" class="nav-link cta">Contact</a>
+      </nav>
+      <button class="hamburger" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="trips.html">Trips</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="mobile-cta">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero small-hero">
+      <img src="images/gallery5.png" alt="Gallery">
+      <div class="hero-gradient"></div>
+      <div class="hero-content container">
+        <h1>Gallery</h1>
+        <p class="lead">Moments from our treks — landscapes, camps, and local life.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="gallery-grid gallery-full">
+        <a class="lightbox" href="images/gallery1.png"><img src="images/gallery1.png" alt=""></a>
+        <a class="lightbox" href="images/gallery2.png"><img src="images/gallery2.png" alt=""></a>
+        <a class="lightbox" href="images/gallery3.png"><img src="images/gallery3.png" alt=""></a>
+        <a class="lightbox" href="images/gallery4.png"><img src="images/gallery4.png" alt=""></a>
+        <a class="lightbox" href="images/gallery5.png"><img src="images/gallery5.png" alt=""></a>
+        <a class="lightbox" href="images/gallery6.png"><img src="images/gallery6.png" alt=""></a>
+      </div>
+      <p style="text-align:center;margin-top:18px"><a href="contact.html" class="btn">Invite us to your event</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <i class="fas fa-mountain logo-footer"></i>
+        <p class="muted">Guided treks across the Indian Himalaya.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="trips.html" class="social-item">Trips</a>
+        <a href="gallery.html" class="social-item">Gallery</a>
+        <a href="index.html" class="social-item">Home</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>hello@mountainexplore.org</p>
+        <p>+91 9XXXXXXXXX</p>
+      </div>
+      <div class="footer-news">
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" class="social-item"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#" class="social-item"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#" class="social-item"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#" class="social-item"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="currentYear4"></span> Mountain Explore — All rights reserved</div>
+      <div class="muted">Designed for safety & sustainability</div>
+    </div>
+  </footer>
+</body>
+</html>

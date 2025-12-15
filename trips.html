@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trips — Mountain Explore</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="home"><i class="fas fa-mountain logo-footer"></i><span class="brand-title">Mountain Explore</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="trips.html" class="nav-link active">Trips</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link cta">Contact</a>
+      </nav>
+      <button class="hamburger" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="trips.html">Trips</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="mobile-cta">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero small-hero">
+      <img src="images/gallery5.png" alt="Trekkers on a ridge">
+      <div class="hero-gradient"></div>
+      <div class="hero-content container">
+        <h1>All Trips</h1>
+        <p class="lead">Browse full itineraries, difficulty and dates. Click a trip to view details.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="trips-list">
+        <!-- Repeatable trip - keep IDs same as script trip data -->
+        <article class="trip-large" id="valley-of-flowers">
+          <img src="images/trek1.png" alt="Valley of Flowers">
+          <div class="trip-large-body">
+            <h3>Valley of Flowers Trek</h3>
+            <p class="meta">Uttarakhand • 6 days • Moderate</p>
+            <p>Explore alpine meadows, rare flora and relaxing riverside camps. Ideal for nature photographers.</p>
+            <div class="trip-actions">
+              <button class="btn details-btn" data-trip="valley">View Details</button>
+              <a class="btn outline" href="contact.html?trip=Valley%20of%20Flowers">Enquire / Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trip-large" id="kedarkantha-peak">
+          <img src="images/trek2.png" alt="Kedarkantha Peak">
+          <div class="trip-large-body">
+            <h3>Kedarkantha Peak Trek</h3>
+            <p class="meta">Uttarakhand • 5 days • Moderate</p>
+            <p>Perfect introduction to ridge camping and Himalayan ridge views — great for first-timers.</p>
+            <div class="trip-actions">
+              <button class="btn details-btn" data-trip="kedar">View Details</button>
+              <a class="btn outline" href="contact.html?trip=Kedarkantha%20Peak">Enquire / Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trip-large" id="triund">
+          <img src="images/trek3.png" alt="Triund">
+          <div class="trip-large-body">
+            <h3>Snow Trekking</h3>
+            <p class="meta">Manali • 3 days • Easy</p>
+            <p>Classic winter trek with snowy camps and a rewarding summit view at sunrise.</p>
+            <div class="trip-actions">
+              <button class="btn details-btn" data-trip="triund">View Details</button>
+              <a class="btn outline" href="contact.html?trip=Triund%20Ridge">Enquire / Book</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- modal reused -->
+  <div id="tripModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="tripModalTitle">
+    <!-- modal content same as index -->
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body">
+        <img id="tripModalImg" src="" alt="">
+        <div class="modal-content">
+          <h3 id="tripModalTitle"></h3>
+          <p id="tripModalMeta" class="muted"></p>
+          <ul id="tripModalBullets"></ul>
+          <div class="modal-actions">
+            <a id="modalBook" class="btn btn-primary" href="contact.html">Book / Enquire</a>
+            <button class="btn btn-outline modal-close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer same -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <i class="fas fa-mountain logo-footer"></i>
+        <p class="muted">Guided treks across the Indian Himalaya. Safety-first, community-forward.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="trips.html" class="social-item">Trips</a>
+        <a href="gallery.html" class="social-item">Gallery</a>
+        <a href="index.html" class="social-item">Home</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>hello@mountainexplore.org</p>
+        <p>+91 9XXXXXXXXX</p>
+      </div>
+      <div class="footer-news">
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" class="social-item"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#" class="social-item"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#" class="social-item"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#" class="social-item"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="currentYear3"></span> Mountain Explore — All rights reserved</div>
+      <div class="muted">Designed for safety & sustainability</div>
+    </div>
+  </footer>
+</body>
+</html>

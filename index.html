@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mountain Explore — Adventures & Treks</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Mountain Explore — curated treks & safe guided adventures. Explore Valley of Flowers, Kedarkantha and more.">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Mountain Explore home">
+        <i class="fas fa-mountain brand-logo" aria-hidden="true"></i>
+        <span class="brand-title">Mountain Explore</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="trips.html" class="nav-link">Trips</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link cta">Contact</a>
+      </nav>
+
+      <button class="hamburger" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="trips.html">Trips</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="mobile-cta">Contact</a>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-media">
+        <img src="images/hero.png" alt="Mountains at sunrise" />
+        <div class="hero-gradient"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-text">
+          <h1>We take you closer to the mountains — safely, responsibly, memorably.</h1>
+          <p>Guided treks, handpicked routes, local crews. Join small-group adventures across the Indian Himalaya.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="trips.html">Explore Trips</a>
+            <a class="btn btn-primary" href="#impact">Our Impact</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="mini-head">Next Departure</div>
+          <h3>Valley of Flowers — 12 Jul 2026</h3>
+          <p class="muted">6 days • Uttarakhand • Moderate</p>
+          <a class="btn btn-outline" href="trips.html#valley-of-flowers">Book Now</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Impact counters -->
+    <section id="impact" class="section section-alt">
+      <div class="container">
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="impact-number" data-target="640">0</div>
+            <p>Trekkers helped</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-number" data-target="128">0</div>
+            <p>Trips organized</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-number" data-target="45">0</div>
+            <p>Community partners</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-number" data-target="98">0</div>
+            <p>Safety score (%)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About preview -->
+    <section class="section container" id="about-preview">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Who we are</h2>
+          <p class="lead">Mountain Explore is a team of certified guides, local partners and outdoor enthusiasts. We focus on safe, sustainable treks that support local communities.</p>
+          <ul class="feature-list">
+            <li><strong>Certified Guides</strong> — trained, experienced and first-aid certified.</li>
+            <li><strong>Responsible Travel</strong> — low-impact camping and local hiring.</li>
+            <li><strong>Transparent Pricing</strong> — clear inclusions & insurance options.</li>
+          </ul>
+          <a href="about.html" class="btn btn-light">Learn More</a>
+        </div>
+        <div class="about-media">
+          <img src="images/team1.png" alt="Guides and trekkers around a campfire">
+        </div>
+      </div>
+    </section>
+
+    <!-- Trips preview -->
+    <section class="section section-trips">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Trips</h2>
+          <p class="muted">Handpicked treks for every level — from weekend escapes to 7-day adventures.</p>
+        </div>
+
+        <div class="trips-grid">
+          <!-- Card 1 -->
+          <article class="trip">
+            <img src="images/trek1.png" alt="Valley of Flowers">
+            <div class="trip-body">
+              <h3>Valley of Flowers</h3>
+              <p class="meta">Uttarakhand • 6 days • Moderate</p>
+              <p class="trip-excerpt">Alpine meadows, rare flowers and easy camping — ideal for nature lovers.</p>
+              <div class="trip-actions">
+                <button class="btn small details-btn" data-trip="valley">View Details</button>
+                <a href="contact.html?trip=Valley%20of%20Flowers" class="btn small outline">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="trip">
+            <img src="images/trek2.png" alt="Kedarkantha">
+            <div class="trip-body">
+              <h3>Kedarkantha Peak</h3>
+              <p class="meta">Uttarakhand • 5 days • Moderate</p>
+              <p class="trip-excerpt">Classic winter summit with panoramic snowline views at sunrise.</p>
+              <div class="trip-actions">
+                <button class="btn small details-btn" data-trip="kedar">View Details</button>
+                <a href="contact.html?trip=Kedarkantha%20Peak" class="btn small outline">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="trip">
+            <img src="images/trek3.png" alt="Snow Trek">
+            <div class="trip-body">
+              <h3>Snow Trekking</h3>
+              <p class="meta">Manali • 3 days • Easy</p>
+              <p class="trip-excerpt">Weekend escape with ridge camping and mesmerizing views.</p>
+              <div class="trip-actions">
+                <button class="btn small details-btn" data-trip="triund">View Details</button>
+                <a href="contact.html?trip=Triund%20Ridge" class="btn small outline">Enquire</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-testimonials">
+      <div class="container">
+        <h2>What trekkers say</h2>
+        <div class="testimonials-grid">
+          <blockquote>"Incredibly well organized — the guides took care of everything. Best trek ever!" <cite>— Anita</cite></blockquote>
+          <blockquote>"Great balance of challenge and comfort. We'll go again next year." <cite>— Sameer</cite></blockquote>
+          <blockquote>"Loved the community meals and the local guides — authentic experience." <cite>— Meera</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter / CTA -->
+    <section class="section cta-section">
+      <div class="container cta-box">
+        <div>
+          <h3>Join our mailing list</h3>
+          <p class="muted">Get first access to new trips, special seats and safety updates.</p>
+        </div>
+        <form id="newsletterForm" class="newsletter" onsubmit="submitNewsletter(event)">
+          <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+          <button class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Trip Modal (reused on pages) -->
+  <div id="tripModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="tripModalTitle">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body">
+        <img id="tripModalImg" src="" alt="">
+        <div class="modal-content">
+          <h3 id="tripModalTitle"></h3>
+          <p id="tripModalMeta" class="muted"></p>
+          <ul id="tripModalBullets"></ul>
+          <div class="modal-actions">
+            <a id="modalBook" class="btn btn-primary" href="contact.html">Book / Enquire</a>
+            <button class="btn btn-outline modal-close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <i class="fas fa-mountain logo-footer"></i>
+        <p class="muted">Guided treks across the Indian Himalaya. Safety-first, community-forward.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="trips.html" class="social-item">Trips</a>
+        <a href="gallery.html" class="social-item">Gallery</a>
+        <a href="about.html" class="social-item">About</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>hello@mountainexplore.org</p>
+        <p>+91 9XXXXXXXXX</p>
+        <p class="muted">P.O. Box / City, India</p>
+      </div>
+
+      <div class="footer-news">
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" class="social-item"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#" class="social-item"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#" class="social-item"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#" class="social-item"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© <span id="currentYear"></span> Mountain Explore — All rights reserved</div>
+      <div class="muted">Designed for safety & sustainability</div>
+    </div>
+  </footer>
+</body>
+</html>
